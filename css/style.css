@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-section {
+    background-color: lightblue;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+button {
+    margin: 3px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: azure;
+}
+
+#result{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
