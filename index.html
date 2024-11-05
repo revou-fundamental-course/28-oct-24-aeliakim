@@ -22,11 +22,27 @@
             </article>
     
             <form action="" class="color-section">
-                <div>
-                    <label for="berat-badan">Berat Badan</label>
-                    <input id="berat-badan" type="number">
+                <div class="jenis-kelamin">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki-laki" name="jeniskelamin"><label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">Perempuan</label>
+                    </div>
                 </div>
 
+                <div class="input-number">
+                    <label for="berat-badan">Berat Badan (kg)</label>
+                    <input id="berat-badan" type="number">
+                </div>
+                <div class="input-number">
+                    <label for="usia">Usia (tahun)</label>
+                    <input id="usia" type="number">
+                </div>
+                <div class="input-number">
+                    <label for="tinggi-badan">Tinggi Badan (cm)</label>
+                    <input id="tinggi-badan" type="number">
+                </div>
+                
                 <button>Hitung BMI</button>
                 <button>Reset</button>
             </form>
