@@ -49,10 +49,10 @@ The BMI calculator is designed for adults and may not be suitable for:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/revou-fundamental-course/28-oct-24-aeliakim.git ```
+   git clone https://github.com/revou-fundamental-course/28-oct-24-aeliakim.git
 2. Navigate to the project directory:
    ```bash
-   cd bmi-calculator ```
+   cd bmi-calculator
 3. Open `index.html` in your web browser
 
 ## Author
