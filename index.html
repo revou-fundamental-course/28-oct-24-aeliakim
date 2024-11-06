@@ -21,29 +21,29 @@
                 <p>BMI (Body Mass Index) adalah ukuran yang digunakan untuk menentukan apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi dan berat badannya. Gunakan kalkulator ini untuk menghitung BMI Anda dan mengetahui apakah berat badan Anda termasuk dalam kategori yang sehat.</p>
             </article>
     
-            <form action="" class="color-section">
-                <div class="jenis-kelamin">
+            <form action="" class="color-section" onsubmit="event.preventDefault(); hitungBMI();">
+                <div class="jenis-kelamin" id="jenis-kelamin">
                     <label for="jenis-kelamin">Jenis Kelamin</label>
                     <div class="radio-group">
-                        <input type="radio" id="laki-laki" name="jeniskelamin"><label for="laki-laki">Laki-laki</label>
-                        <input type="radio" id="perempuan" name="jeniskelamin"><label for="perempuan">Perempuan</label>
+                        <input type="radio" id="laki-laki" name="jeniskelamin" required><label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jeniskelamin" required><label for="perempuan">Perempuan</label>
                     </div>
                 </div>
 
                 <div class="input-number">
                     <label for="berat-badan">Berat Badan (kg)</label>
-                    <input id="berat-badan" type="number">
+                    <input id="berat-badan" type="number" required>
                 </div>
                 <div class="input-number">
                     <label for="usia">Usia (tahun)</label>
-                    <input id="usia" type="number">
+                    <input id="usia" type="number" required>
                 </div>
                 <div class="input-number">
                     <label for="tinggi-badan">Tinggi Badan (cm)</label>
-                    <input id="tinggi-badan" type="number">
+                    <input id="tinggi-badan" type="number" required>
                 </div>
                 
-                <button type="submit" onclick="hitungBMI()">Hitung BMI</button>
+                <button type="submit">Hitung BMI</button>
                 <button type="reset">Reset</button>
             </form>
     
@@ -59,25 +59,26 @@
         <!-- section result -->
         <section id="result-section" class="hidden">
             <header>
-                <h1>Hasil</h1>
+                <h1>Hasil BMI</h1>
             </header>
 
             <!-- Hasil Kalkulasi -->
             <div class="color-section text-center">
                 <h4>Hasil Kalkulasi:</h4>
-                <p id="result" class="text-center">24.5</p>
+                <p id="result" class="text-center"><span id="resultValue"></span></p>
             </div>
         
             <!-- informasi hasil -->
             <article>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dolorem officia laboriosam, voluptas voluptates expedita in eveniet laborum tempora? Eveniet, ad laudantium. Quaerat natus aliquid hic tempora reiciendis consectetur est.</p>
+                <span id="resultCategory"></span>
+                <p id="resultExplanation"></p>
             </article>
         </section>
     </main>
 
     <!-- footer -->
     <footer>
-        <span>copyright &copy; 2024</span>
+        <span>Created by Aeliakim &copy; 2024</span>
     </footer>
 
     <!-- script -->
